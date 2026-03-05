@@ -3,109 +3,250 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Greenden Plants</title>
 
-<!-- Tailwind CDN -->
+<title>GreenDen - Plant Store</title>
+
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
-<body class="bg-green-50 font-sans">
+<body class="bg-gray-50 font-sans">
 
 <!-- Navbar -->
-<nav class="bg-green-200 p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-green-900">Greenden</h1>
 
-    <ul class="flex gap-6 text-green-900 font-medium">
-        <li class="hover:underline cursor-pointer">Home</li>
-        <li class="hover:underline cursor-pointer">Products</li>
-        <li class="hover:underline cursor-pointer">Contact</li>
-    </ul>
+<nav class="bg-green-100 shadow-md">
+
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<h1 class="text-2xl font-bold text-green-800">GreenDen</h1>
+
+<ul class="flex space-x-8 font-medium text-gray-700">
+<li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+<li><a href="#" class="hover:text-green-600 transition">Products</a></li>
+<li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+</ul>
+
+</div>
+
 </nav>
 
 
+<!-- Title Section -->
+
+<section class="text-center py-12">
+
+<h2 class="text-3xl font-bold text-gray-800 mb-4">
+Our Products
+</h2>
+
+<input type="text"
+placeholder="Search for a product..."
+class="border px-5 py-2 rounded-lg w-80 focus:outline-none focus:ring-2 focus:ring-green-400">
+
+</section>
+
+
 <!-- Product Section -->
-<section class="text-center mt-8">
 
-    <h2 class="text-2xl font-bold mb-4">Our Products</h2>
+<section class="max-w-7xl mx-auto px-6 pb-16">
 
-    <!-- Search -->
-    <input 
-    type="text" 
-    placeholder="Search for a Product..."
-    class="border border-gray-400 rounded px-4 py-2 w-80"
-    >
+<h3 class="text-xl font-semibold text-gray-700 mb-8">
+Best Seller
+</h3>
 
-</section>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
+<!-- Product Card -->
 
-<!-- Best Seller -->
-<section class="mt-10 px-10">
+<div class="bg-white rounded-xl shadow-md overflow-hidden group transition duration-300 hover:shadow-2xl hover:-translate-y-2">
 
-<h3 class="text-xl font-semibold text-center mb-6">Best Seller</h3>
-
-<div class="grid grid-cols-4 gap-6 text-center">
-
-<!-- Product 1 -->
-<div class="bg-white p-4 rounded shadow">
-<img src="https://images.unsplash.com/photo-1593691509543-c55fb32c8b1d" class="h-40 w-full object-cover rounded">
-<h4 class="mt-2 font-semibold">Rose Plant</h4>
-<p>$20</p>
+<div class="overflow-hidden">
+<img src="./image/rose plant 4 (2).png"
+class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
 </div>
 
-<!-- Product 2 -->
-<div class="bg-white p-4 rounded shadow">
-<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" class="h-40 w-full object-cover rounded">
-<h4 class="mt-2 font-semibold">Button Rose</h4>
-<p>$20</p>
-</div>
+<div class="p-4 text-center">
 
-<!-- Product 3 -->
-<div class="bg-white p-4 rounded shadow">
-<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="h-40 w-full object-cover rounded">
-<h4 class="mt-2 font-semibold">Lavender Plant</h4>
-<p>$20</p>
-</div>
+<h4 class="font-semibold text-gray-800">Rose Plant</h4>
 
-<!-- Product 4 -->
-<div class="bg-white p-4 rounded shadow">
-<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946" class="h-40 w-full object-cover rounded">
-<h4 class="mt-2 font-semibold">Sunflower Plant</h4>
-<p>$20</p>
+<p class="text-green-600 font-medium">$20</p>
+
+<button class="mt-3 bg-green-500 text-white px-4 py-1 rounded-lg hover:bg-green-600 transition">
+Buy Now
+</button>
+
 </div>
 
 </div>
-</section>
 
 
-<!-- Product Grid -->
-<section class="mt-12 px-10">
+<!-- Product Card -->
 
-<div class="grid grid-cols-4 gap-6 text-center">
+<div class="bg-white rounded-xl shadow-md overflow-hidden group transition duration-300 hover:shadow-2xl hover:-translate-y-2">
 
-<div class="bg-white p-4 rounded shadow">
-<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735" class="h-40 w-full object-cover rounded">
-<h4 class="mt-2 font-semibold">Indoor Plant</h4>
-<p>$20</p>
+<div class="overflow-hidden">
+<img src="./image/rose plant 4 (3).png"
+class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
 </div>
 
-<div class="bg-white p-4 rounded shadow">
-<img src="https://images.unsplash.com/photo-1446071103084-c257b5f70672" class="h-40 w-full object-cover rounded">
-<h4 class="mt-2 font-semibold">Indoor Plant</h4>
-<p>$20</p>
+<div class="p-4 text-center">
+
+<h4 class="font-semibold text-gray-800">Lavender Plant</h4>
+
+<p class="text-green-600 font-medium">$20</p>
+
+<button class="mt-3 bg-green-500 text-white px-4 py-1 rounded-lg hover:bg-green-600 transition">
+Buy Now
+</button>
+
 </div>
 
-<div class="bg-white p-4 rounded shadow">
-<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" class="h-40 w-full object-cover rounded">
-<h4 class="mt-2 font-semibold">Indoor Plant</h4>
-<p>$20</p>
 </div>
 
-<div class="bg-white p-4 rounded shadow">
-<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946" class="h-40 w-full object-cover rounded">
-<h4 class="mt-2 font-semibold">Button Rose</h4>
-<p>$20</p>
+
+<!-- Product Card -->
+
+<div class="bg-white rounded-xl shadow-md overflow-hidden group transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+
+<div class="overflow-hidden">
+<img src="./image/rose plant 4 (4).png"
+class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
 </div>
+
+<div class="p-4 text-center">
+
+<h4 class="font-semibold text-gray-800">Sunflower</h4>
+
+<p class="text-green-600 font-medium">$20</p>
+
+<button class="mt-3 bg-green-500 text-white px-4 py-1 rounded-lg hover:bg-green-600 transition">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+
+<!-- Product Card -->
+
+<div class="bg-white rounded-xl shadow-md overflow-hidden group transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+
+<div class="overflow-hidden">
+<img src="./image/rose plant 4 (5).png"
+class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+</div>
+
+<div class="p-4 text-center">
+
+<h4 class="font-semibold text-gray-800">Indoor Plant</h4>
+
+<p class="text-green-600 font-medium">$20</p>
+
+<button class="mt-3 bg-green-500 text-white px-4 py-1 rounded-lg hover:bg-green-600 transition">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+
+<!-- Product Card -->
+
+<div class="bg-white rounded-xl shadow-md overflow-hidden group transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+
+<div class="overflow-hidden">
+<img src="./image/rose plant 4 (2).png"
+class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+</div>
+
+<div class="p-4 text-center">
+
+<h4 class="font-semibold text-gray-800">Snake Plant</h4>
+
+<p class="text-green-600 font-medium">$20</p>
+
+<button class="mt-3 bg-green-500 text-white px-4 py-1 rounded-lg hover:bg-green-600 transition">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+
+<!-- Product Card -->
+
+<div class="bg-white rounded-xl shadow-md overflow-hidden group transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+
+<div class="overflow-hidden">
+<img src="./image/rose plant 4 (3).png"
+class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+</div>
+
+<div class="p-4 text-center">
+
+<h4 class="font-semibold text-gray-800">Lily Plant</h4>
+
+<p class="text-green-600 font-medium">$20</p>
+
+<button class="mt-3 bg-green-500 text-white px-4 py-1 rounded-lg hover:bg-green-600 transition">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+
+<!-- Product Card -->
+
+<div class="bg-white rounded-xl shadow-md overflow-hidden group transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+
+<div class="overflow-hidden">
+<img src="./image/rose plant 4 (4).png"
+class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+</div>
+
+<div class="p-4 text-center">
+
+<h4 class="font-semibold text-gray-800">Aloe Vera</h4>
+
+<p class="text-green-600 font-medium">$20</p>
+
+<button class="mt-3 bg-green-500 text-white px-4 py-1 rounded-lg hover:bg-green-600 transition">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+
+<!-- Product Card -->
+
+<div class="bg-white rounded-xl shadow-md overflow-hidden group transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+
+<div class="overflow-hidden">
+<img src="./image/rose plant 4 (3).png"
+class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+</div>
+
+<div class="p-4 text-center">
+
+<h4 class="font-semibold text-gray-800">Bonsai Plant</h4>
+
+<p class="text-green-600 font-medium">$20</p>
+
+<button class="mt-3 bg-green-500 text-white px-4 py-1 rounded-lg hover:bg-green-600 transition">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
 
 </div>
 
@@ -113,17 +254,25 @@
 
 
 <!-- Footer -->
-<footer class="bg-green-300 mt-12 p-6 text-center">
 
-<h2 class="text-xl font-bold">Greenden</h2>
+<footer class="bg-green-100 py-10">
 
-<p class="text-sm mt-2">
-The standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interested.
+<div class="max-w-6xl mx-auto text-center px-6">
+
+<h2 class="text-xl font-semibold text-gray-800">GreenDen</h2>
+
+<p class="mt-3 text-gray-600 text-sm">
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
 </p>
 
-<p class="text-sm mt-2">© 2026 Greenden.com</p>
+<p class="mt-4 text-gray-600 text-sm">
+© 2026 GreenDen.com
+</p>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
