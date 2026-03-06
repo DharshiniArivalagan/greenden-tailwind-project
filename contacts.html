@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Greenden Plants</title>
-
-<!-- Tailwind CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <!--Tailwind CSS CDN LINK-->
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
 </head>
+<body>
+    <!--Responsive navbar-->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2x1">Greenden</h1>
 
-<body class="bg-green-50 font-sans">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+</svg>
 
-<!-- Navbar -->
-<nav class="bg-green-200 p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-green-900">Greenden</h1>
+       <ul class="flex gap-5 text-gray-600 hidden md:flex ">
+            <li>
+                <a class="hover:underline hover:text-black" href="indexs.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Products</a>
+            
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contacts.html">contact</a>
+            </li>
 
-    <ul class="flex gap-6 text-green-900 font-medium">
-        <li class="hover:underline cursor-pointer">Home</li>
-        <li class="hover:underline cursor-pointer">Products</li>
-        <li class="hover:underline cursor-pointer">Contact</li>
-    </ul>
-</nav>
+          </ul>
 
+    </nav>
 <section class="bg-white dark:bg-gray-900">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
